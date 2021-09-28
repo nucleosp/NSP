@@ -1,0 +1,260 @@
+/* Toda página */
+.aboutUsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+.allWidth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  background: none;
+  border: 2px solid #0d324d;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: rgb(0, 0, 103);
+  transition: all 0.5s ease;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.button:hover {
+  background-color: #0d324d;
+  border: 2px solid white;
+  color: white;
+}
+.coloredTitle {
+  color: #ff1b81;
+}
+.horizontalContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+/* Tela inicial com titulo */
+.pageTitleWrap {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+}
+.pageTitleWrap:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  background-image: url(/Head.png);
+}
+.pageTitle {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  color: #ff1b81;
+}
+/* Textos inicias */
+.aboutUsTexts {
+  margin-top: 2rem;
+  max-width: 1200px;
+  text-align: justify;
+  width: 100%;
+  z-index: 1;
+}
+.aboutUsTexts80 {
+  margin-top: 2rem;
+  max-width: 1200px;
+  text-align: justify;
+  width: 80%;
+  z-index: 1;
+}
+.subtitle {
+  width: 100%;
+  color: #ff1b81;
+}
+.title {
+  color: #ff1b81;
+}
+.dotsMEJ {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 15vh;
+  left: 20%;
+  opacity: 0.3;
+  z-index: 0;
+}
+/* Cards Diretoria */
+.cardsDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+/* Values  */
+.valuesContent {
+  width: 100%;
+  margin-top: 2rem;
+}
+.halfWidth {
+  width: 50%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.imageTextWrap {
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.imageTextContent {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.imageTextImage {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.imageTextText {
+  width: 100%;
+  color: #fff;
+  text-align: justify;
+}
+.saoPauloImage {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  top: 10vh;
+  left: 10%;
+  opacity: 0.5;
+}
+/* Middle Texts */
+.dotsMission {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 20vh;
+  right: 20%;
+  opacity: 0.3;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+  .verticalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .aboutUsTexts {
+    margin-top: 2rem;
+    max-width: 1200px;
+    text-align: justify;
+    width: 80%;
+  }
+  .pageTitleWrap:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 0%;
+    background-image: url(/Head.png);
+  }
+  .imageTextWrap {
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .imageTextImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .saoPauloImage {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 20vh;
+    left: 10%;
+    opacity: 0.5;
+  }
+  .cardsDisplay {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageTextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .halfWidth {
+    width: 100%;
+  }
+  .imageTextWrap {
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUsTexts80 {
+    margin-top: 2rem;
+    max-width: 1200px;
+    text-align: justify;
+    width: 100%;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,296 @@
+/* Toda página */
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.allWidth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.button {
+  background: none;
+  border: 2px solid #0d324d;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: rgb(0, 0, 103);
+  transition: all 0.5s ease;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #0d324d;
+  border: 2px solid white;
+  color: white;
+}
+
+.coloredTitle {
+  color: #ff1b81;
+}
+
+.horizontalContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Tela inicial com titulo */
+
+.pageTitleWrap {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+}
+
+.pageTitleWrap:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  background-image: url(/Head.png);
+}
+
+.pageTitle {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  color: #ff1b81;
+}
+
+/* Textos inicias */
+
+.contactTexts {
+  margin-top: 2rem;
+  max-width: 1200px;
+  text-align: center;
+  width: 100%;
+}
+
+.firstPageContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Newsletter */
+
+.newsletterContainer {
+  width: 100%;
+  color: #0d324d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletterText {
+  padding: 3rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+}
+
+/*Social media*/
+
+.socialmediaContainer {
+  width: 50%;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.firstpageImage {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.socialmediaIconsContainer {
+  padding-top: 1rem;
+}
+
+.socialmediaItem {
+  list-style: none;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.socialmediaItem:hover {
+  color: #628ff1;
+  transition: 400ms all ease-in-out;
+}
+
+.subtitle {
+  width: 100%;
+  color: #ff1b81;
+}
+
+.title {
+  color: #ff1b81;
+}
+
+.dotsMEJ {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 15vh;
+  left: 20%;
+  opacity: 0.3;
+}
+
+/* Cards Diretoria */
+
+.cardsDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+/* Values  */
+
+.valuesContent {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.halfWidth {
+  width: 50%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.imageTextWrap {
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.imageTextContent {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageTextImage {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Middle Texts */
+
+/* Responsividade */
+
+@media only screen and (max-width: 768px) {
+  .contactContentPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .allWidth {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .imageTextImage {
+    width: 80%;
+  }
+  .pageTitleWrap:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 0;
+    background-image: url(/Head.png);
+  }
+  .socialmediaIconsContainer {
+    padding-top: 0.5rem;
+  }
+
+  .socialmediaContainer {
+    padding-left: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .firstPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletterContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageTextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .halfWidth {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .imageTextWrap {
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
