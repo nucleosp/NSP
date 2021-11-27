@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 340,
-    height: 340,
+    height: 360,
     margin: 25,
     border: '2px solid pink',
     fontFamily: 'Montserrat'
